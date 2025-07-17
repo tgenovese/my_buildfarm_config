@@ -57,7 +57,7 @@ target_repository: http://repo.ros2.org/ubuntu/building
 targets:
   ubuntu:
     jammy:
-      amd64:
+      arm64:
 upload_credential_id: null
 type: release-build
 version: 2
