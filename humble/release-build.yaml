@@ -53,11 +53,11 @@ repositories:
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
   - http://repo.ros2.org/ubuntu/main
-target_repository: http://repo.ros2.org/ubuntu/building
+target_repository: http://repo.example.com/ubuntu/building
 targets:
   ubuntu:
     jammy:
-      arm64:
-upload_credential_id: null
+      amd64:
 type: release-build
+upload_credential_id: null
 version: 2
