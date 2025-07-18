@@ -59,13 +59,9 @@ repositories:
   - http://repo.ros2.org/ubuntu/main
 target_repository: http://repo.example.com/ubuntu/building
 targets:
-  debian:
-    bookworm:
-      arm64:
   ubuntu:
     noble:
       amd64:
-      arm64:
 type: release-build
 upload_credential_id: null
 version: 2

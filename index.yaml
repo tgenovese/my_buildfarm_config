@@ -5,15 +5,22 @@ distributions:
   humble:
     release_builds:
       default: humble/release-build.yaml
+      ujv8: humble/release-ubuntu-arm64-build.yaml
   jazzy:
     release_builds:
       default: jazzy/release-build.yaml
+      dbv8: jazzy/release-debian-arm64-build.yaml
+      unv8: jazzy/release-ubuntu-arm64-build.yaml
   kilted:
     release_builds:
       default: kilted/release-build.yaml
+      dbv8: kilted/release-debian-arm64-build.yaml
+      unv8: kilted/release-ubuntu-arm64-build.yaml
   rolling:
     release_builds:
       default: rolling/release-build.yaml
+      dbv8: rolling/release-debian-arm64-build.yaml
+      unv8: rolling/release-ubuntu-arm64-build.yaml
 jenkins_url: https://jenkins.example.com
 prerequisites:
   debian_repositories:
