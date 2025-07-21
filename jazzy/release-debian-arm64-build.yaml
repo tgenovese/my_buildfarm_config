@@ -4,32 +4,16 @@
 abi_incompatibility_assumed: true
 
 package_blacklist:
-- kortex_api  # Kinova does not provide arm64, only armv7. https://github.com/PickNikRobotics/ros2_kortex/issues/158
-- kortex_bringup  # depends on kortex_api and kortex_driver
-- kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
 - mapviz  # Known issues with building on ARM processors. https://github.com/swri-robotics/mapviz/issues/777
-- rmw_zenoh  # depends on zenoh_cpp_vendor
 - rmw_zenoh_cpp  # depends on zenoh_cpp_vendor
 - zenoh_cpp_vendor  # Build fails because rustc is only 1.63.0 and newer version is required
 - zenoh_security_tools  # depends on zenoh_cpp_vendor
 
 package_ignore_list:
-- connext_cmake_module  # No Debian package for Connext
-- demo_nodes_cpp_native_gurumdds  # No Debian package for GurumDDS
 - gurumdds_cmake_module  # No Debian package for GurumDDS
-- rmw_connext_cpp  # No Debian package for Connext
-- rmw_connext_dynamic_cpp  # No Debian package for Connext
-- rmw_connext_shared_cpp  # No Debian package for Connext
 - rmw_connextdds  # No Debian package for Connext
-- rmw_connextddsmicro  # No Debian package for Connext
 - rmw_connextdds_common  # No Debian package for Connext
 - rmw_gurumdds_cpp  # No Debian package for GurumDDS
-- rmw_gurumdds_shared_cpp  # No Debian package for GurumDDS
-- rmw_gurumdds_static_cpp  # No Debian package for GurumDDS
-- rosidl_typesupport_connext_c  # No Debian package for Connext
-- rosidl_typesupport_connext_cpp  # No Debian package for Connext
-- rosidl_typesupport_gurumdds_c  # No Debian package for GurumDDS
-- rosidl_typesupport_gurumdds_cpp  # No Debian package for GurumDDS
 - rti_connext_dds_cmake_module  # No Debian package for Connext
 
 package_dependency_behavior:
