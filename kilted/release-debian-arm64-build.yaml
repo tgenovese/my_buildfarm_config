@@ -8,6 +8,7 @@ package_blacklist:
 - kortex_bringup  # depends on kortex_api and kortex_driver
 - kortex_driver  # depends on kortex_api and uses libKortexApiCpp.a from Kinova
 - mapviz  # Known issues with building on ARM processors. https://github.com/swri-robotics/mapviz/issues/777
+- rmw_zenoh  # depends on zenoh_cpp_vendor
 - rmw_zenoh_cpp  # depends on zenoh_cpp_vendor
 - zenoh_cpp_vendor  # Build fails because rustc is only 1.63.0 and newer version is required
 - zenoh_security_tools  # depends on zenoh_cpp_vendor
